@@ -11,7 +11,9 @@
             <div id="offer">
               {!! $exit_popup['above_form_html'] !!}
               <div class="mb-3">
-                {!! do_shortcode('[mc4wp_form id="' . $exit_popup['mc4wp_form_id'] . '"]') !!}
+                @if ($exit_popup['mc4wp_form_id'])
+                  {!! do_shortcode('[mc4wp_form id="' . $exit_popup['mc4wp_form_id'] . '"]') !!}
+                @endif
               </div>
               {!! $exit_popup['below_form_html'] !!}
             </div>

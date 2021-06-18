@@ -50,12 +50,14 @@ footer {
           </div>
         </div>
       </div>
-      <div class="row justify-content-center">
-        <div class="col-auto text-center">
-          <p class="text-black" >Be the first to experience MK100 Glass.</p>
-          <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#signupModal" >Join The Waitlist</button>
+      @if (get_field('mc4wp_form_id', 'option'))
+        <div class="row justify-content-center">
+          <div class="col-auto text-center">
+            <p class="text-black" >Be the first to experience MK100 Glass.</p>
+            <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#signupModal" >Join The Waitlist</button>
+          </div>
         </div>
-      </div>
+      @endif
     </div>
   </div>
 </section>
@@ -66,13 +68,15 @@ footer {
     </div>
   </div>
 </footer> --}}
-<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered" role="document">
-		<div class="modal-content">
-			<div class="modal-body">
-        <h3 class="text-black mb-3" >Join and receive a discount at launch!</h3>
-				{!! do_shortcode('[mc4wp_form id="' . get_field('mc4wp_form_id', 'option') . '"]') !!}
-			</div>
-		</div>
-	</div>
-</div>
+@if ($mc4wp_form_id = get_field('mc4wp_form_id', 'option'))
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h3 class="text-black mb-3" >Join and receive a discount at launch!</h3>
+          {!! do_shortcode('[mc4wp_form id="' . $mc4wp_form_id . '"]') !!}
+        </div>
+      </div>
+    </div>
+  </div>
+@endif

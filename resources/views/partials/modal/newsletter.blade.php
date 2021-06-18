@@ -1,5 +1,6 @@
 @php
 $newsletter_modal = get_field('newsletter_modal', get_queried_object_id());
+$mc4wp_form_id = get_field('mc4wp_form_id', 'option');
 @endphp
 @if ($newsletter_modal['enable'])
   <div id="newsletterModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="newsletterModalLabel" aria-hidden="true">
@@ -15,7 +16,7 @@ $newsletter_modal = get_field('newsletter_modal', get_queried_object_id());
           <div class="text-center p-5">
             <h3 style="font-size: 4rem;" >GET 10% OFF</h3>
             <p>today and also receive all of our future discounts and newsletters right to your email.</p>
-            {!! do_shortcode('[mc4wp_form id="' . get_field('mc4wp_form_id', 'option') . '"]') !!}
+            {!! do_shortcode('[mc4wp_form id="' . $mc4wp_form_id . '"]') !!}
           </div>
         </div>
       </div>
