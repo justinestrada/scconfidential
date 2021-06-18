@@ -1,0 +1,62 @@
+{
+    "key": "group_5e781d51629d1",
+    "title": "About Page",
+    "fields": [
+        {
+            "key": "field_5e786be16891d",
+            "label": "Mission",
+            "name": "mission",
+            "type": "textarea",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Top quality 100\/100 affordable products! We aim to provide the highest quality glassware across the nation! - From MK100 Team",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5e781d65e17e9",
+            "label": "Instagram Script",
+            "name": "instagram",
+            "type": "textarea",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<script src=\"https:\/\/apps.elfsight.com\/p\/platform.js\" defer><\/script>\r\n<div class=\"elfsight-app-f19e6eb2-171a-4249-872e-0537b4928b2d\"><\/div>",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "views\/template-about.blade.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1584950278
+}

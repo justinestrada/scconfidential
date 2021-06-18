@@ -1,0 +1,31 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+
+$theme-colors: (
+  primary: #070707
+);
+
+$primary: #070707;
+$black: #070707;
+$white: #fff;
+$dark-gray: #666;
+$gray: #757575;
+$light-gray: #ddd;
+
+$red: #f00;
+$blue: blue;
+$green: #003f00;
+$yellow: yellow;
+$brown: #864c01;
+$pink: #e91e63;
+$puple: #673ab7;
+$gold: #b15500;
+$jade-green: #89b190;
+$jade-brown: #b60;
+$dark-green: #2e7603;
+$slime-green: #4e9400;
+$slime-purple: #6970be;
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;

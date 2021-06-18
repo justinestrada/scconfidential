@@ -1,0 +1,17 @@
+
+[aria-expanded="true"] .fa-angle-down {
+  transform: rotate(180deg);
+}
+
+.card-header {
+  button {
+    .fa-angle-down {
+      transition: 500ms all;
+      font-size: 1.5rem;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+
+.social {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: inline-block;
+
+    a {
+      color: $white;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+#social_shares {
+  list-style: none;
+
+  li {
+    display: inline-block;
+  }
+}

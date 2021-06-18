@@ -1,0 +1,14 @@
+
+.carousel-caption .caption-title {
+  font-size: 2rem;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+}

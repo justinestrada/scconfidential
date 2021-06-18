@@ -1,0 +1,17 @@
+.article-card {
+  .article-img {
+    height: 256px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .entry-category {
+    width: fit-content;
+    border-bottom: 3px solid $black;
+  }
+
+  .entry-content {
+    font-size: 14px;
+  }
+}

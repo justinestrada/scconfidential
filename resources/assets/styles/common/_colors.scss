@@ -1,0 +1,46 @@
+
+.text-white {
+  color: $white;
+}
+
+.text-black {
+  color: $black;
+}
+
+.text-gray {
+  color: $gray;
+}
+
+.text-light-gray {
+  color: $light-gray;
+}
+
+.bg-white {
+  background-color: $white;
+}
+
+.bg-dark-white {
+  background-color: #f7f7f7;
+}
+
+.bg-black {
+  background-color: $black;
+}
+
+.bg-dark-gray {
+  background-color: $dark-gray;
+}
+
+.bg-gray {
+  background-color: $gray;
+}
+
+.bg-light-gray {
+  background-color: $light-gray;
+}
+
+@include media-breakpoint-up(lg) {
+  .bg-lg-transparent {
+    background-color: transparent;
+  }
+}

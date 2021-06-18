@@ -1,0 +1,9 @@
+.dropdown-toggle {
+  &::after {
+    display: none;
+  }
+
+  .fa {
+    transition: 500ms all;
+  }
+}

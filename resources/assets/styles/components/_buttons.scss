@@ -1,0 +1,55 @@
+.btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  text-transform: initial;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border: none;
+}
+
+.btn-primary {
+  background-color: $black !important;
+  color: $white !important;
+  border-color: $black !important;
+
+  &:focus,
+  &:hover {
+    background-color: $white !important;
+    color: $black !important;
+  }
+}
+
+.btn-secondary {
+  background-color: $white !important;
+  color: $black !important;
+  border-color: $white !important;
+
+  &:focus,
+  &:hover {
+    background-color: $black !important;
+    color: $white !important;
+  }
+}
+
+.btn-outline-primary {
+  color: $black !important;
+  background-color: $white !important;
+}
+
+.btn-outline-secondary {
+  color: $black;
+  border-color: $black;
+}
+
+.btn-circle {
+  background: rgba(255, 255, 255, 0.75);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}

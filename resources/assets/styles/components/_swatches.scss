@@ -1,0 +1,88 @@
+
+.swatch {
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 100%;
+  background-color: $light-gray;
+}
+
+.swatch-black {
+  background-color: $black;
+}
+
+.swatch-blue {
+  background-color: $blue;
+}
+
+.swatch-green {
+  background-color: $green;
+}
+
+.swatch-yellow {
+  background-color: yellow;
+}
+
+.swatch-red {
+  background-color: $red;
+}
+
+.swatch-gold {
+  background-color: $gold;
+}
+
+.swatch-pink {
+  background-color: #e91e63;
+}
+
+.swatch-dark-green {
+  background-color: $dark-green;
+}
+
+.swatch-slime-green {
+  background-color: $slime-green;
+}
+
+.swatch-jade-green {
+  background-color: $jade-green;
+}
+
+.swatch-jade-brown {
+  background-color: $jade-brown;
+}
+
+.swatch-slime-purple {
+  background-color: $slime-purple;
+}
+
+.swatch-american-red {
+  background-color: #a30000;
+}
+
+.swatch-american-orange {
+  background-color: #910101;
+}
+
+.swatch-american-yellow {
+  background-color: #c99800;
+}
+
+.swatch-american-green {
+  background-color: #2f4d00;
+}
+
+.swatch-brown\/green {
+  background-image: linear-gradient(to right, $brown, $green);
+}
+
+.swatch-green\/brown {
+  background-image: linear-gradient(to right, $green, $brown);
+}
+
+.swatch-slime-green\/pink {
+  background-image: linear-gradient(to right, $slime-green, $pink);
+}
+
+.swatch-pink\/purple {
+  background-image: linear-gradient(to right, $pink, $purple);
+}

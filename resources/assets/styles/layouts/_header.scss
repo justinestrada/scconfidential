@@ -1,0 +1,129 @@
+body {
+  padding-top: 56px !important;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 80px !important;
+  }
+}
+
+body.announcement-shown {
+  margin-top: 32px;
+}
+
+#header {
+  position: fixed;
+  top: 2rem;
+  z-index: 16;
+  width: 100%;
+  background: $white;
+  transition: 500ms all;
+
+  .header-logo {
+    height: 40px;
+
+    @include media-breakpoint-up(md) {
+      // height: 72px;
+      height: 48px;
+    }
+  }
+
+  #header-nav {
+    > .menu-item {
+      margin-right: 1rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      > a {
+        @extend .d-block;
+        @extend .ff-roboto;
+
+        font-size: 1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 500;
+        padding-top: 1.75rem;
+        padding-bottom: 1.75rem;
+      }
+
+      &:focus > a,
+      &:hover > a {
+        box-shadow: inset 0 -2px 0 0 $black;
+      }
+
+      &.dropdown:hover .dropdown-menu {
+        display: flex;
+        left: -100%;
+        padding: 1.75rem;
+        border-radius: 0;
+        margin-top: 0;
+
+        > .menu-item-has-children {
+          padding-right: 1.75rem;
+          border-right: 1px solid #ddd;
+          margin-right: 1.75rem;
+
+          &:last-child {
+            padding-right: 0;
+            border-right: none;
+            margin-right: 0;
+          }
+
+          > a {
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+          }
+        }
+
+        .dropdown-item {
+          padding-left: 0;
+          padding-right: 0;
+
+          &:hover {
+            background: transparent;
+          }
+        }
+
+        .dropdown-menu {
+          display: block;
+          position: initial;
+          top: initial;
+          left: initial;
+          float: initial;
+          min-width: initial;
+          padding: 0;
+          border: none;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  #header-icons {
+    list-style: none;
+
+    li {
+      display: inline-block;
+
+      .btn {
+        @extend .py-3;
+
+        // padding: 11px 0.75rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+
+        @include media-breakpoint-up(md) {
+          padding-top: 1.675rem !important;
+          padding-bottom: 1.675rem !important;
+        }
+      }
+    }
+  }
+}
+
+body.announcement-shown #header {
+  top: 2rem;
+}

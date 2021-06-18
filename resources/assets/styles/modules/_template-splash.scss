@@ -1,0 +1,51 @@
+.template-splash {
+  letter-spacing: 1px;
+  padding: 0 !important;
+  margin: 0 !important;
+
+  #announcement,
+  header {
+    display: none;
+  }
+
+  .main {
+    height: 100vh;
+  }
+
+  #splash {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    .coming-soon {
+      font-size: 32px;
+
+      @media (min-width: 992px) {
+        font-size: 40px;
+      }
+    }
+
+    p {
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      // background-color: rgba(0, 0, 0, 0.75);
+      background-color: rgba(255, 255, 255, 0.75);
+    }
+  }
+
+  #footer {
+    display: none;
+  }
+}

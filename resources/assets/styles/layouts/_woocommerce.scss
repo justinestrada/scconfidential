@@ -1,0 +1,134 @@
+
+.woocommerce {
+  .out-of-stock {
+    @extend .badge;
+    @extend .badge-danger;
+  }
+
+  button.button {
+    @extend .btn;
+    @extend .btn-primary;
+  }
+
+  #respond input#submit {
+    @extend .btn;
+    @extend .btn-primary;
+  }
+
+  #breadcrumb .woocommerce-breadcrumb {
+    margin-bottom: 0;
+  }
+
+  #breadcrumb .woocommerce-breadcrumb a {
+    color: $black;
+  }
+
+  /* stylelint-disable font-family-no-missing-generic-family-keyword */
+  .star-rating {
+    font-family: star;
+  }
+
+  .amount {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+
+    span {
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+    }
+  }
+
+  .woocommerce-message {
+    border-left: 1px solid $light-gray;
+    border-bottom: 1px solid $light-gray;
+    border-right: 1px solid $light-gray;
+  }
+}
+
+.woocommerce form .form-row input.input-text {
+  @extend .form-control;
+}
+
+.woocommerce form .form-row label {
+  @extend .w-100;
+
+  + .password-input {
+    @extend .w-100;
+  }
+}
+
+.woocommerce-form__label-for-checkbox.woocommerce-form-login__rememberme {
+  padding-right: 1rem;
+}
+
+.woocommerce-notice {
+  @extend .alert;
+
+  &--success {
+    @extend .alert-success;
+  }
+}
+
+/*
+ * Checkout Order Pay
+ */
+ul.order_details {
+  padding: 0;
+  margin-bottom: 3rem !important;
+}
+
+form#submitpayment {
+  h4 {
+    visibility: hidden;
+  }
+
+  label[for="paymentmethodnew"] {
+    @extend .w-100;
+  }
+
+  #pmtable {
+    &.active {
+      border: 1px solid $light-gray;
+    }
+
+    @extend .table;
+    @extend .table-responsive;
+
+    tbody {
+      display: block;
+      width: 100%;
+
+      tr {
+        display: block;
+        width: 100%;
+
+        td {
+          display: inline-block;
+          width: 50%;
+
+          &:first-child {
+            vertical-align: middle;
+          }
+        }
+
+        input[type="text"] {
+          @extend .form-control;
+        }
+      }
+
+      #savepaymentmethod {
+        margin-right: 0.5rem !important;
+      }
+    }
+  }
+
+  #backbutton {
+    @extend .btn;
+    @extend .btn-outline-primary;
+  }
+
+  #submitbutton {
+    @extend .btn;
+    @extend .btn-primary;
+  }
+}

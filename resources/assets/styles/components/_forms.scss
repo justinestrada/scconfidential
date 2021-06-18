@@ -1,0 +1,130 @@
+
+.toggle-label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggle-label-text {
+  margin-right: 1rem;
+}
+
+.toggle {
+  isolation: isolate;
+  position: relative;
+  height: 24px;
+  width: 48px;
+  border-radius: 15px;
+  background: $light-gray;
+  overflow: hidden;
+
+  .toggle-inner {
+    z-index: 2;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    height: 22px;
+    width: 46px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .toggle-active-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200%;
+    background: $black;
+    transform: translate3d(-100%, 0, 0);
+    transition: transform 0.05s linear 0.17s;
+  }
+
+  .indicator {
+    height: 100%;
+    width: 200%;
+    background: $white;
+    border-radius: 13px;
+    transform: translate3d(-75%, 0, 0);
+    transition: transform 0.35s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+  }
+
+  .toggle-state {
+    display: none;
+
+    &:checked ~ .toggle-active-bg {
+      transform: translate3d(-50%, 0, 0);
+    }
+
+    &:checked ~ .toggle-inner .indicator {
+      transform: translate3d(25%, 0, 0);
+    }
+  }
+}
+
+.custom-control {
+  display: block;
+  padding: 0.75rem 1.25rem 0.75rem 2rem;
+  margin: 0;
+
+  &.custom-checkbox {
+    cursor: pointer;
+
+    .custom-control-input:checked ~ .custom-control-indicator::before {
+      content: "✓";
+      font-size: 1rem;
+      height: 24px;
+      width: 24px;
+      display: block;
+      text-align: center;
+      // background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgI…c3NywwLTEuMDcxTDIxLjY1MiwzLjIxMXoiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==);
+    }
+
+    .custom-control-indicator {
+      top: 12px;
+      left: 0;
+      position: absolute;
+      display: block;
+      width: 24px;
+      height: 24px;
+      pointer-events: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      background-color: $white;
+      border: 2px solid $black !important;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: 75%;
+    }
+  }
+
+  &.custom-control-description {
+    font-size: 14px;
+  }
+}
+
+.input-group {
+  .input-group-text {
+    height: 64px;
+    border-top-left-radius: 70px;
+    border-bottom-left-radius: 70px;
+    background: transparent;
+    border-right: none;
+  }
+
+  .form-control {
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 64px;
+    height: 64px;
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 70px;
+    border-left: none;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}

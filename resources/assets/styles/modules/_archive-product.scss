@@ -1,0 +1,38 @@
+
+.content-details {
+  .cart {
+    button {
+      background: none;
+      border: none;
+    }
+
+    button + .added_to_cart {
+      display: none;
+    }
+  }
+}
+
+.woocommerce-pagination {
+  ul {
+    border-radius: 30px;
+
+    @extend .z-depth-1\:hover;
+
+    li {
+      &:first-child {
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+      }
+
+      &:last-child {
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+      }
+
+      a:hover {
+        background: $black !important;
+        color: $white !important;
+      }
+    }
+  }
+}
